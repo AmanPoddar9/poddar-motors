@@ -1,8 +1,7 @@
 import React from "react";
-//import milanPoddarImage from "public\images\website images and logos\Pmpl_logo.png"; // Add the actual path to the image
 import Image from "next/image";
-//import director_photo from "public/director_photo.jpg";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 const AboutPage: React.FC = () => {
   return (
     <>
@@ -21,38 +20,41 @@ const AboutPage: React.FC = () => {
             </p>
           </section>
 
-          {/* <section className="mb-12 flex flex-col md:flex-row items-center">
-            <div className="md:w-1/2 md:pr-8">
+          <div className="flex flex-col md:flex-row items-center md:space-x-8">
+            {/* Director's Image */}
+            <div className="md:w-1/2 mb-4 md:mb-0">
               <Image
-                src={director_photo}
-                alt="Milan Poddar"
-                height={200}
+                src="/photo_of_director.jpg" // Replace with the actual image path
+                alt="Director's Image"
                 width={200}
-                className="mb-4 rounded-lg shadow-lg w-full"
+                height={200}
+                className="object-cover w-full h-full rounded-lg"
               />
-            </div> */}
-          <div className="md:w-1/2">
-            <h2 className="text-2xl font-bold mb-4">Director's Message</h2>
-            <p className="text-gray-600 text-lg leading-relaxed">
-              Our journey began in 1992, and since then, we have been dedicated
-              to providing unparalleled automotive services. Our team, led by
-              experienced technicians, shares a passion for excellence, and we
-              take pride in the quality of work we deliver. At Poddar Motors, we
-              understand the importance of trust when it comes to servicing your
-              vehicle. That's why we prioritize transparent communication,
-              quality service, and a commitment to exceeding your expectations.
-              I invite you to explore our range of services, meet our skilled
-              team, and experience the difference that sets Poddar Motors apart.
-              Whether you need routine maintenance or more complex repairs, we
-              are here to ensure your vehicle receives the care it deserves.
-              Thank you for considering Poddar Motors for your automotive needs.
-              We look forward to serving you and becoming your trusted partner
-              in maintaining the health and performance of your vehicle. <br />
-              <span className="font-bold block mt-4">Best Regards,</span>
-              Milan Poddar
-              <br />
-              Director, Poddar Motors.
-            </p>
+            </div>
+            <div className="md:w-1/2">
+              <h2 className="text-2xl font-bold mb-4">Director's Message</h2>
+              <p className="text-gray-600 text-lg leading-relaxed">
+                Our journey began in 1992, and since then, we have been
+                dedicated to providing unparalleled automotive services. Our
+                team, led by experienced technicians, shares a passion for
+                excellence, and we take pride in the quality of work we deliver.
+                At Poddar Motors, we understand the importance of trust when it
+                comes to servicing your vehicle. That's why we prioritize
+                transparent communication, quality service, and a commitment to
+                exceeding your expectations. I invite you to explore our range
+                of services, meet our skilled team, and experience the
+                difference that sets Poddar Motors apart. Whether you need
+                routine maintenance or more complex repairs, we are here to
+                ensure your vehicle receives the care it deserves. Thank you for
+                considering Poddar Motors for your automotive needs. We look
+                forward to serving you and becoming your trusted partner in
+                maintaining the health and performance of your vehicle. <br />
+                <span className="font-bold block mt-4">Best Regards,</span>
+                Milan Poddar
+                <br />
+                Director, Poddar Motors.
+              </p>
+            </div>
           </div>
           {/* </section> */}
 
@@ -102,10 +104,9 @@ const AboutPage: React.FC = () => {
               has entrusted us with their automotive needs.
             </p>
           </section>
-
-          {/* Add more sections for "Our Team," "Our Services," and "Why Choose Us?" as needed */}
         </div>
       </div>
+      <Footer />
     </>
   );
 };

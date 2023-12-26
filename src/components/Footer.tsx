@@ -16,7 +16,11 @@ const Footer: React.FC = () => {
 
   const renderContactColumn = () => (
     <div className="flex flex-col items-start mr-8">
-      <img src={contactInfo.logo} alt="Company Logo" className="mb-4" />
+      <img
+        src="/logo_pmpl.png"
+        alt="Company Logo"
+        className="mb-4 h-32 w-32 round-all"
+      />
       <a
         href={`mailto:${contactInfo.email}`}
         className="text-blue-500 hover:underline mb-2"
